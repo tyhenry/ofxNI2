@@ -15,6 +15,7 @@ void testApp::setup(){
     
     model.loadModel("test.dae");
     model.setupBones();
+    
 }
 
 void testApp::exit(){
@@ -29,7 +30,9 @@ void testApp::update(){
 	for (int i = 0; i < tracker.getNumUser(); i++){
 		ofxNiTE2::User::Ref user = tracker.getUser(i);
         model.transformBones(user);
+        model.update();
 	}
+    
 }
 
 void testApp::draw(){

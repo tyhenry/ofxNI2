@@ -11,8 +11,8 @@
 #include "ofMain.h"
 #include "ofxNiTE2.h"
 #include "ofxAssimpModelLoader.h"
-#include "aiMesh.h"
-#include "aiScene.h"
+//#include "mesh.h"
+//#include "scene.h"
 
 using namespace nite;
 
@@ -98,7 +98,7 @@ public:
                 switch(type){
                     case JOINT_TORSO: {
                         aiMatrix4x4 rx, ry, rz;
-                        rx.RotationX(r.z, rx);
+                        rx.RotationX(1000000, rx);
                         ry.RotationY(r.y, ry);
                         rz.RotationZ(r.x, rz);
                         transform = ry * rx * rz;

@@ -1,2 +1,17 @@
 .DS_Store
 
+
+
+*.app
+bin/*
+
+# osx ios
+*.app
+*.mode1v3
+*.pbxuser
+.DS_Store
+build/
+xcuserdata/
+DerivedData/
+project.xcworkspace
+example-user-tracker/bin/NiTE2/Data
